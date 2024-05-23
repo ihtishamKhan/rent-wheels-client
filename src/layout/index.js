@@ -79,7 +79,7 @@ function Layout() {
                     padding: "14px 0",
                     fontWeight: 600
                 }}>
-                    <p>&copy; 2021</p>
+                    <p>&copy; 2024</p>
                 </footer>
             </div >
         </>
