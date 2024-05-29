@@ -7,8 +7,9 @@ function Home() {
     const [cars, setCars] = useState([])
     const [noOfCars, setNoOfCars] = useState(0)
 
+
     useEffect(() => {
-        fetch('http://localhost:9000/api/cars')
+        fetch(`${process.env.REACT_APP_BASE_URL}/api/cars`)
             .then(response => response.json())
             .then(data => {
                 setNoOfCars(data.no_of_cars)

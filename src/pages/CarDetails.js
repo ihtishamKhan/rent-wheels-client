@@ -6,7 +6,7 @@ function CarDetails() {
     const { id } = useParams()
 
     useEffect(() => {
-        fetch(`http://localhost:9000/get-car-details/${id}`)
+        fetch(`${process.env.REACT_APP_BASE_URL}/api/cars/${id}`)
             .then(response => response.json())
             .then(data => {
                 setCar(data.car)
